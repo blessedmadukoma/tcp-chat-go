@@ -5,3 +5,9 @@
 - `/rooms` - get the list of rooms
 - `/msg <msg>` - send message to everyone in the room
 - `/quit` - exit the room/chat server
+
+# Starting the server
+- run the build file: ./tcp-chat
+- open two new terminals and run: telnet localhost port where port is the port which the server started running on e.g. telnet localhost 8000
+
+Credit to Alex Pliutau for the video which inspired this project

@@ -100,7 +100,7 @@ func (s *server) msg(c *client, args []string) {
 		return
 	}
 
-	c.room.broadcast(c, c.nm+": "+strings.Join(args[1:len(args)], " "))
+	c.room.broadcast(c, c.nm+": "+strings.Join(args[1:], " "))
 }
 
 func (s *server) quitCurrentRoom(c *client) {

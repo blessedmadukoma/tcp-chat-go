@@ -12,7 +12,7 @@ func main() {
 
 	listener, err := net.Listen("tcp", ":8000")
 	if err != nil {
-		log.Fatal("Error starting server: %s", err.Error())
+		log.Fatalf("Error starting server: %s", err.Error())
 	}
 
 	defer listener.Close()
